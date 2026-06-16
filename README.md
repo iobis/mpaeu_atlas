@@ -1,3 +1,7 @@
+# MPA Europe atlas
+
+Built using Svelte 5. See Svelte details below.
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
