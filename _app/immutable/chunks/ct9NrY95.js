@@ -1,0 +1,3 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./BSbCxntY.js","./ByPWl-Qi.js","./BcgnSMxp.js"])))=>i.map(i=>d[i]);
+import{t as e}from"./BcgnSMxp.js";import{i as t,t as n}from"./DGpMXXTy.js";var r;(function(e){e[e.None=0]=`None`,e[e.Deflate=1]=`Deflate`,e[e.Zstd=2]=`Zstd`})(r||={});var i=!1;async function a(){let t=await e(()=>import(`./BSbCxntY.js`),__vite__mapDeps([0,1,2]),import.meta.url);return i||=(await t.load(),!0),t}async function o(e,i){let o=i.lercParameters?.[1]??r.None,s=e;if(o===r.Deflate||o===r.Zstd){let a=o===r.Deflate?t.Deflate:t.Zstd;s=await(await n.get(a)())(e,i)}return{layout:`band-separate`,bands:(await a()).decode(s).pixels}}export{o as decode};
+//# sourceMappingURL=ct9NrY95.js.map
