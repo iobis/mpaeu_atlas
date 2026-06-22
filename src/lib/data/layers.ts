@@ -562,9 +562,9 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
     "description": "Database of carbon storage in European marine non-biogenic sediment habitats - https://zenodo.org/records/17591064",
     "categoryField": "OCindex",
     "colorMap": {
-      "<0.50": "#1d6fa4",
-      "0.50-2.00": "#2ca25f",
-      ">2.00": "#8856a7"
+      "<0.50": "#0fb5ae",
+      "0.50-2.00": "#f68511",
+      ">2.00": "#de3d82"
     }
   },
   {
@@ -601,7 +601,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "prioritisation_for_biodiversity_conservation_-_rba",
-    "name": "Prioritisation for Biodiversity Conservation - RBA",
+    "name": "All Representative Biodiversity Areas",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -615,7 +615,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "prioritisation_for_biodiversity_conservation_-_rba_top10pct",
-    "name": "Prioritisation for Biodiversity Conservation - RBA - Top 10%",
+    "name": "Top 10% Representative Biodiversity Areas",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -629,7 +629,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "prioritisation_for_biodiversity_conservation_-_rba_top30pct",
-    "name": "Prioritisation for Biodiversity Conservation - RBA - Top 30%",
+    "name": "Top 30% Representative Biodiversity Areas",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -643,7 +643,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "prioritisation_for_biodiversity_conservation_-_rba_top50pct",
-    "name": "Prioritisation for Biodiversity Conservation - RBA - Top 50%",
+    "name": "Top 50% Representative Biodiversity Areas",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -657,7 +657,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "priority_areas_for_commercial_fish_-_rba",
-    "name": "Priority areas for commercial fish - RBA",
+    "name": "All RBA for fishery species",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -671,7 +671,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "priority_areas_for_commercial_fish_-_rba_top10pct",
-    "name": "Priority areas for commercial fish - RBA - Top 10%",
+    "name": "Top 10% RBA for fishery species",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -685,7 +685,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "priority_areas_for_commercial_fish_-_rba_top30pct",
-    "name": "Priority areas for commercial fish - RBA - Top 30%",
+    "name": "Top 30% RBA for fishery species",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
@@ -699,7 +699,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "priority_areas_for_commercial_fish_-_rba_top50pct",
-    "name": "Priority areas for commercial fish - RBA - Top 50%",
+    "name": "Top 50% RBA for fishery species",
     "category": "Prioritisation",
     "type": "raster",
     "scale": "continuous",
