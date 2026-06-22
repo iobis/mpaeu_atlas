@@ -82,8 +82,19 @@
 
 	<!-- ── Source + description ── -->
 	<p class="card-meta">
-		<span class="source-badge">{layer.config.source}</span>
 		{layer.config.description}
+	</p>
+	<p class="card-meta card-meta-links">
+		<span class="meta-item"><strong>Source:</strong>
+			{#if layer.config.source.startsWith('http')}
+				<a class="file-link" href={layer.config.source} target="_blank" rel="noopener">{layer.config.source}</a>
+			{:else}
+				{layer.config.source}
+			{/if}
+		</span>
+		{#if layer.config.link}
+			<a class="file-link" href={layer.config.link} target="_blank" rel="noopener">Source file ↗</a>
+		{/if}
 	</p>
 
 	<!-- ── Controls ── -->
@@ -170,7 +181,7 @@
 	/* ── Header ── */
 	.card-header {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 0.35rem;
 		padding: 0.5rem 0.65rem;
 		background: #f0f4f8;
@@ -217,9 +228,7 @@
 		font-size: 0.8rem;
 		font-weight: 600;
 		color: #1e293b;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
+		word-break: break-word;
 	}
 
 	.card-actions {
@@ -271,20 +280,26 @@
 		font-size: 0.69rem;
 		color: #64748b;
 		margin: 0;
-		padding: 0.45rem 0.65rem;
+		padding: 0.45rem 0.65rem 0 0.65rem;
 		line-height: 1.4;
+	}
+	.card-meta-links {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+		padding-top: 0.3rem;
+		padding-bottom: 0.45rem;
 		border-bottom: 1px solid #ebebeb;
 	}
-	.source-badge {
-		display: inline-block;
-		background: #006cd7;
-		color: #ffffff;
-		font-size: 0.6rem;
-		padding: 0.04rem 0.38rem;
-		border-radius: 999px;
-		margin-right: 0.35rem;
-		vertical-align: middle;
+	.meta-item { display: inline; }
+	.meta-item strong { color: #475569; font-weight: 600; margin-right: 0.2rem; }
+	.file-link {
+		color: #006cd7;
+		font-size: 0.67rem;
+		text-decoration: none;
 	}
+	.file-link:hover { text-decoration: underline; }
 
 	/* ── Controls ── */
 	.card-controls {

@@ -66,7 +66,7 @@
 	<LayerCatalogue />
 
 	<div class="map-wrapper">
-		<Map center={[-10, 48]} zoom={4}>
+		<Map bounds={[-33, 25, 40, 72]}>
 			<DeckOverlay entries={overlayEntries} bind:loadingIds bind:errorIds onAutoDetect={handleAutoDetect} />
 		</Map>
 

@@ -127,6 +127,12 @@
 												{layer.source}
 											{/if}
 										</span>
+										{#if layer.link}
+											<span class="info-source">
+												<strong>Link:</strong>
+												<a href={layer.link} target="_blank" rel="noopener">{layer.link}</a>
+											</span>
+										{/if}
 										<span class="info-type">
 											<strong>Type:</strong> {layer.type}
 										</span>
@@ -289,7 +295,7 @@
 
 	.layer-row {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 0;
 	}
 
@@ -297,7 +303,7 @@
 	.layer-toggle {
 		flex: 1;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		gap: 0.4rem;
 		padding: 0.42rem 0.5rem 0.42rem 0.6rem;
 		background: none;
@@ -334,9 +340,7 @@
 		flex: 1;
 		font-size: 0.8rem;
 		color: #1e293b;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
+		word-break: break-word;
 	}
 	.layer-item.active .layer-name { font-weight: 600; }
 

@@ -48,6 +48,7 @@
 		style?: string | maplibregl.StyleSpecification;
 		center?: [number, number];
 		zoom?: number;
+		bounds?: maplibregl.LngLatBoundsLike;
 		class?: string;
 		children?: Snippet;
 	}
@@ -56,6 +57,7 @@
 		style = OBIS_BASEMAP,
 		center = [0, 0],
 		zoom = 2,
+		bounds = undefined,
 		class: className = '',
 		children
 	}: Props = $props();
@@ -70,12 +72,15 @@
 	});
 
 	onMount(() => {
-		const m = new maplibregl.Map({
-			container,
-			style,
-			center,
-			zoom
-		});
+		const mapOptions: maplibregl.MapOptions = { container, style };
+		if (bounds) {
+			mapOptions.bounds = bounds;
+			mapOptions.fitBoundsOptions = { padding: 20 };
+		} else {
+			mapOptions.center = center;
+			mapOptions.zoom = zoom;
+		}
+		const m = new maplibregl.Map(mapOptions);
 
 		m.addControl(new maplibregl.NavigationControl(), 'top-left');
 		m.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-left');
