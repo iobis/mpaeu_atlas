@@ -49,13 +49,31 @@
 	<div class="catalogue-header">
 		<img src={logo} alt="MPA Europe logo" class="logo" />
 		<h1 class="catalogue-title">Atlas for MSP</h1>
+	</div>
+
+	<div class="catalogue-explanation">
 		<p class="catalogue-sub">
-			The MPA Europe project used a holistic range of measures to prioritise areas for
-			protection using systematic conservation planning.
+			This atlas supports marine and maritime spatial planning (MSP) by mapping where relevant features of nature importance occur, 
+			and how they overlap with environmental conditions, in European and adjacent seas. The spatial resolution is 0.05° (approximately 5km). 
+			This is a guide for regional spatial planning that can inform biodiversity-inclusive planning at local scales with stakeholders.
 		</p>
 		<p class="catalogue-sub">
+			Details of the MPA Europe Project that developed it and its funding sources are at the project <a href="https://mpa-europe.eu/" target="_blank" rel="noopener">website</a>.
+		</p>
+		<p class="catalogue-sub">
+			The Representative Biodiversity Areas (RBA) are the result of a prioritisation analysis using systematic conservation planning,
+			based on the distribution of marine species shown on the <a href="https://shiny.obis.org/distmaps" target="_blank" rel="noopener">Species Explorer here</a>.
+			Thus, the top 10 % or 30% RBA is the network of areas that, if effectively conserved and managed through a network of MPAs or other effective conservation measures,
+			could protect the most species, particularly rare and threatened species.  
+			Because tens of thousands of species were included, the RBA represent all habitats,
+			ecosystems and biogeographic regions in Europe’s seas.
+			Analyses using the predicted future ranges of these species showed that the 
+			RBA would still be the optimal areas under all IPCC climate change scenarios to 2100.
+
+		</p>
+		<!-- <p class="catalogue-sub">
 			<a href="https://mpa-europe.eu/" target="_blank" rel="noopener">mpa-europe.eu</a>
-		</p>
+		</p> -->
 	</div>
 
 	<!-- ── Search ── -->
@@ -161,13 +179,14 @@
 
 <style>
 	.catalogue {
-		width: 250px;
+		width: 340px;
 		flex-shrink: 0;
 		background: #f6f6f6;
 		border-right: 1px solid #d8d8d8;
 		display: flex;
 		flex-direction: column;
-		overflow: hidden;
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 
 	/* ── Header ── */
@@ -175,6 +194,20 @@
 		padding: 1rem 1rem 0.75rem;
 		border-bottom: 1px solid #d8d8d8;
 		flex-shrink: 0;
+	}
+	.catalogue-header h1 {
+		justify-self: center;
+	}
+	.catalogue-explanation {
+		padding: 1rem 1rem 0.75rem;
+		border-bottom: 1px solid #d8d8d8;
+		background-color: white;
+		flex-shrink: 0;
+	}
+	.catalogue-explanation p {
+		color: black;
+		padding-top: 0.15rem;
+		font-size: 0.8rem;
 	}
 	.logo {
 		max-width: 100%;
@@ -231,8 +264,6 @@
 
 	/* ── Body ── */
 	.catalogue-body {
-		flex: 1;
-		overflow-y: auto;
 		padding: 0.25rem 0;
 	}
 

@@ -15,11 +15,7 @@
 
 	let { layer, dragging = false, loading = false, error = false, onDragStart, onDragEnd }: Props = $props();
 
-	const COLORMAPS: ColormapName[] = [
-		'viridis', 'plasma', 'magma', 'inferno',
-		'rdylgn', 'rdbu', 'greys', 'blues',
-		'ylgnbu', 'cfastie', 'spectral', 'turbo'
-	];
+	const COLORMAPS: ColormapName[] = ['blues', 'turbo', 'viridis'];
 
 	const s = $derived(layer.settings);
 
