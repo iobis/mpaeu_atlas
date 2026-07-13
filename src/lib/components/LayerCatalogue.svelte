@@ -54,7 +54,7 @@
 	<div class="catalogue-explanation">
 		<p class="catalogue-sub">
 			This atlas supports marine and maritime spatial planning (MSP) by mapping where relevant features of nature importance occur, 
-			and how they overlap with environmental conditions, in European and adjacent seas. The spatial resolution is 0.05° (approximately 5km). 
+			and how they overlap with environmental conditions, in European and adjacent seas. The spatial resolution was 0.05° latitude × longitude, approximately 5.5 x 5.5 km and 31 km2 at the equator, and 15 km2 at 60 degrees latitude. 
 			This is a guide for regional spatial planning that can inform biodiversity-inclusive planning at local scales with stakeholders.
 		</p>
 		<p class="catalogue-sub">
@@ -65,7 +65,7 @@
 			based on the distribution of marine species shown on the <a href="https://shiny.obis.org/distmaps" target="_blank" rel="noopener">Species Explorer here</a>.
 			Thus, the top 10 % or 30% RBA is the network of areas that, if effectively conserved and managed through a network of MPAs or other effective conservation measures,
 			could protect the most species, particularly rare and threatened species.  
-			Because tens of thousands of species were included, the RBA represent all habitats,
+			Because thousands of species were included, the RBA represent all habitats,
 			ecosystems and biogeographic regions in Europe’s seas.
 			Analyses using the predicted future ranges of these species showed that the 
 			RBA would still be the optimal areas under all IPCC climate change scenarios to 2100.

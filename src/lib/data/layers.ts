@@ -159,7 +159,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "seagrass",
-    "name": "Seagrass",
+    "name": "Seagrass meadows",
     "category": "Habitat-forming species",
     "type": "raster",
     "scale": "continuous",
@@ -174,7 +174,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "kelp",
-    "name": "Kelp",
+    "name": "Kelp forests",
     "category": "Habitat-forming species",
     "type": "raster",
     "scale": "continuous",
@@ -189,7 +189,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "maerl",
-    "name": "Maerl",
+    "name": "Maerl beds",
     "category": "Habitat-forming species",
     "type": "raster",
     "scale": "continuous",
@@ -219,7 +219,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "corals",
-    "name": "Corals",
+    "name": "Reef forming corals",
     "category": "Habitat-forming species",
     "type": "raster",
     "scale": "continuous",
@@ -234,7 +234,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
   },
   {
     "id": "polychaete_reefs",
-    "name": "Polychaete reefs",
+    "name": "Reef forming tube-worms",
     "category": "Habitat-forming species",
     "type": "raster",
     "scale": "continuous",
@@ -288,7 +288,7 @@ export const LAYER_CATALOGUE: LayerConfig[] = [
     "type": "vector-point",
     "scale": "categorical",
     "url": "https://mpaeu-sdm.s3.amazonaws.com/atlas/euro_carbon_points.fgb",
-    "source": "MPA Europe",
+    "source": "MPA Europe | Graversen, A. E. L., Lønborg, C., Addamo, A. M., Pedersen, S. G., Chemello, S., Alejo, I., Apostolaki, E. T., Asplund, M. E., Austin, W. E. N., Berov, D., Berto, D., Björk, M., Black, K., Bobchev, N., Bonaglia, S., Borgersen, G., Bouma, T., Costello, M. J., Dahl, M., … Jensen, D. K. (2025). A marine and salt marsh sediment organic carbon database for European regional seas (EURO-CARBON). Data in Brief, 60, 111595. https://doi.org/10.1016/j.dib.2025.111595",
     "link": "https://zenodo.org/records/17591064",
     "description": "Database of carbon storage in European marine non-biogenic sediment habitats",
     "categoryField": "OCindex",
